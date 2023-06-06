@@ -1,0 +1,79 @@
+.box {
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  transform: translateX(100px) translateY(-200px);
+}
+
+.thumbnail {
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(0deg);
+  min-width: 285px;
+  min-height: 150px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0.3rem;
+  transform: skewX(335deg);
+}
+
+.cover {
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) rotateY(0deg);
+  min-width: 120px;
+  min-height: 150px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  margin: 0 0.2rem;
+  transform: skewX(335deg);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container-background {
+  height: 100vh;
+  background-color: black;
+  transform: rotateX(355deg) rotateY(355deg) rotateZ(5deg);
+  transform-style: preserve-3d;
+}
+
+.container {
+  perspective: 500px;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000007d;
+  z-index: 3;
+}
+
+.netflix-container h1 {
+  line-height: 1;
+  text-shadow: 5px 3px 14px rgb(0 0 0 / 70%);
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  font-family: -apple-system, system-ui, Segoe UI, sans-serif;
+  z-index: 1000000;
+  margin: 0;
+  width: 100%;
+}
