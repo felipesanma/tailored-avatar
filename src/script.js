@@ -1,4 +1,4 @@
-const ROWS = 5;
+const ROWS = 10;
 const ROW_ITEMS = 15;
 const containerBg = document.getElementById("container-bg");
 
